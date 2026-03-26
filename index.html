@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serginho Performance 360</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              neon: '#39FF14',
+              'neon-dark': '#18B26A',
+              dark: '#0A0A0A',
+              metallic: '#C9C9C9',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Orbitron', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #0A0A0A;
+        color: #FFFFFF;
+        overflow-x: hidden;
+      }
+      .neon-shadow {
+        box-shadow: 0 0 15px rgba(57, 255, 20, 0.3);
+      }
+      .neon-text-shadow {
+        text-shadow: 0 0 10px rgba(57, 255, 20, 0.5);
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0A0A0A;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #18B26A;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #39FF14;
+      }
+      @media print {
+        body {
+          background-color: white !important;
+          color: black !important;
+        }
+        .glass-card {
+          border: 1px solid #ccc !important;
+          background: white !important;
+          box-shadow: none !important;
+        }
+        .print\:hidden {
+          display: none !important;
+        }
+        .print\:overflow-visible {
+          overflow: visible !important;
+        }
+        button {
+          display: none !important;
+        }
+        .text-white {
+          color: black !important;
+        }
+        .text-gray-500 {
+          color: #666 !important;
+        }
+        .text-gray-400 {
+          color: #666 !important;
+        }
+        .text-gray-300 {
+          color: #333 !important;
+        }
+        .bg-dark {
+          background-color: white !important;
+        }
+        .bg-dark\/50, .bg-dark\/60, .bg-dark\/80, .bg-dark\/90, .bg-dark\/95 {
+          background-color: white !important;
+        }
+        .bg-white\/5, .bg-white\/10 {
+          background-color: #f9f9f9 !important;
+          border: 1px solid #ddd !important;
+        }
+        .border-white\/5, .border-white\/10, .border-white\/20 {
+          border-color: #ccc !important;
+        }
+        .shadow-neon, .neon-shadow {
+          box-shadow: none !important;
+        }
+        .text-neon {
+          color: #18B26A !important;
+        }
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "recharts": "https://esm.sh/recharts@^3.7.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.564.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "@google/genai": "https://esm.sh/@google/genai@^1.41.0",
+    "html2canvas": "https://esm.sh/html2canvas@^1.4.1"
+  }
+}
+</script>
+<script>
+  if (typeof process === 'undefined') {
+    window.process = { env: {} };
+  }
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

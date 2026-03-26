@@ -1,0 +1,8 @@
+{
+  "name": "MEU APP OFICIAL",
+  "description": "Plataforma de avaliação física inteligente exclusiva de Sérgio Araujo. Análise de somatotipo, antropometria, dinamometria e análise postural 3D com inteligência de dados.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
